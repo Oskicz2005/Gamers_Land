@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('Jestem gotowy!');
-    client.user.setActivity('YouTube', { type: 'WATCHING' });
 });
 
 client.on('message', message => {
