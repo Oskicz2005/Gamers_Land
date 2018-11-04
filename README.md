@@ -1,2 +1,2 @@
-# Gamers_Land
-Bot Gamers Land
+# super-super-heroku-bot
+Bot using heroku, 24/7!
