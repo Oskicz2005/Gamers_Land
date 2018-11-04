@@ -10,6 +10,9 @@ client.on('message', message => {
     	message.reply('pong');
   	}
 });
+client.on('ready', () => {
+    client.user.setActivity('YouTube', { type: 'WATCHING' });
+});
 
 
 // THIS  MUST  BE  THIS  WAY
