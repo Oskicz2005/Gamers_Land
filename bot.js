@@ -5,18 +5,12 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
-
 static void UpdatePresence()
     {
         DiscordRichPresence discordPresence;
         memset(&discordPresence, 0, sizeof(discordPresence));
-        discordPresence.state = "Trwa Budowa!";
-        discordPresence.details = "Trwa Budowa!";
+        discordPresence.state = "Playing Solo";
+        discordPresence.details = "Competitive";
         discordPresence.startTimestamp = 1507665886;
         discordPresence.endTimestamp = 1507665886;
         discordPresence.largeImageText = "Numbani";
@@ -27,8 +21,8 @@ static void UpdatePresence()
         discordPresence.spectateSecret = "MTIzNDV8MTIzNDV8MTMyNDU0";
         discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
         Discord_UpdatePresence(&discordPresence);
-    }
 });
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
