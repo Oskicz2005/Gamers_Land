@@ -3,15 +3,13 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+	client.user.setActivity('YouTube', { type: 'WATCHING' });
 });
 
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
-});
-client.on('ready', () => {
-    client.user.setActivity('YouTube', { type: 'WATCHING' });
 });
 
 
