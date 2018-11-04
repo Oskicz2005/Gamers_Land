@@ -11,12 +11,12 @@ client.on('message', message => {
   	}
 });
 
-    static void UpdatePresence()
+static void UpdatePresence()
     {
         DiscordRichPresence discordPresence;
         memset(&discordPresence, 0, sizeof(discordPresence));
-        discordPresence.state = "Playing Solo";
-        discordPresence.details = "Competitive";
+        discordPresence.state = "Trwa Budowa!";
+        discordPresence.details = "Trwa Budowa!";
         discordPresence.startTimestamp = 1507665886;
         discordPresence.endTimestamp = 1507665886;
         discordPresence.largeImageText = "Numbani";
@@ -28,6 +28,7 @@ client.on('message', message => {
         discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
         Discord_UpdatePresence(&discordPresence);
     }
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
